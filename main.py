@@ -60,9 +60,9 @@ categories = {
         "keywords": ["Bierpong"],
         "cp": 100},
 }
-hours = get_overview(
+overview = get_overview(
     "Calendar-Studium@group.calendar.google.com.ics", categories
 )
 
-for keyword, duration in hours.items():
-    print(f"'{keyword}': {duration}")
+for keyword, elements in overview.items():
+    print(f"'{keyword}': {elements}")
